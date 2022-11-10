@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'home': "url('/images/background.png')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        home: "url('/images/background.png')",
+        "footer-texture": "url('/img/footer-texture.png')",
       },
-      fontFamily:{
-        body:["Montserrat","sans-serif"]
+      fontFamily: {
+        body: ["Montserrat", "sans-serif"],
       },
     },
   },
-  plugins: [],
-}
+  plugins: [require("tailwind-scrollbar-hide")],
+};
