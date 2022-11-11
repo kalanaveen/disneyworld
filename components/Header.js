@@ -14,6 +14,7 @@ const Header = () => {
         width={80}
         height={80}
         className="cursor-pointer"
+        onClick={() => router.push("/")}
       />
       {session && (
         <div className="hidden md:flex md:ml-2 lg:ml-10 items-center lg:space-x-12 md:space-x-2">
