@@ -19,7 +19,7 @@
   }
 
   .sponsor {
-    @apply flex relative w-52 h-32 sm:w-64 sm:h-36 border-[3px] border-[#f9f9f9] border-opacity-10 rounded-lg shadow-xl overflow-hidden hover:border-opacity-80 hover:shadow-2xl transform hover:scale-105 transition duration-300 cursor-pointer;
+    @apply flex  relative w-52 h-32 sm:w-64 sm:h-36 border-[3px] border-[#f9f9f9] border-opacity-10 rounded-lg shadow-xl  hover:border-opacity-80 hover:shadow-2xl transform hover:scale-105 transition duration-300 cursor-pointer overflow-hidden;
   }
   .btn{
     @apply text-xs md:text-base flex items-center justify-center py-2.5 px-6 hover:bg-[#c6c6c6] rounded

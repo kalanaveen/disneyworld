@@ -11,20 +11,17 @@ const Header = () => {
     <header className="sticky bg-[#040714] top-0 z-[1000] flex items-center px-10 h-[72px] md:px-12">
       <Image
         src="/images/logo.svg"
-        width={80}
-        height={80}
-        className="cursor-pointer"
+        height="0"
+        width="0"
+        alt="logo"
+        className="cursor-pointer w-auto h-full"
         onClick={() => router.push("/")}
       />
       {session && (
-        <div className="hidden md:flex md:ml-2 lg:ml-10 items-center lg:space-x-12 md:space-x-2">
+        <div className="hidden md:flex md:ml-2 lg:ml-10 justify-center items-center lg:space-x-12 md:space-x-2">
           <a className="header-link group">
             <HomeIcon className="h-4" />
             <span className="span">Home</span>
-          </a>
-          <a className="header-link group">
-            <img src="/images/searchicon.png" alt="search" className="h-5" />
-            <span className="span">Search</span>
           </a>
           <a className="header-link group">
             <PlusIcon className="h-4" />

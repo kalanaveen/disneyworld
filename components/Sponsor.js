@@ -5,9 +5,16 @@ const Sponsor = () => {
   return (
     <section className="flex flex-col lg:flex-row justify-center items-center mt-10 gap-6 px-8 max-w-[1400px] mx-auto">
       <div className="sponsor group">
-        <Image src="/images/disnep.png" layout="fill" objectFit="cover" />
+        <Image
+          src="/images/disnep.png"
+          alt="disney"
+          fill
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        />
         <video
-          className="hidden group-hover:inline rounded-lg  object-cover"
+          className="hidden group-hover:inline rounded-lg object-cover"
           autoPlay
           loop
           playsInline
@@ -17,7 +24,14 @@ const Sponsor = () => {
       </div>
 
       <div className="sponsor group">
-        <Image src="/images/pixar.png" layout="fill" objectFit="cover" />
+        <Image
+          src="/images/pixar.png"
+          fill
+          alt="pixar"
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        />
         <video
           className="hidden group-hover:inline rounded-lg  object-cover"
           autoPlay
@@ -29,7 +43,14 @@ const Sponsor = () => {
       </div>
 
       <div className="sponsor group">
-        <Image src="/images/marvel.png" layout="fill" objectFit="cover" />
+        <Image
+          src="/images/marvel.png"
+          fill
+          alt="marvel"
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        />
         <video
           className="hidden group-hover:inline rounded-lg  object-cover"
           autoPlay
@@ -41,7 +62,14 @@ const Sponsor = () => {
       </div>
 
       <div className="sponsor group">
-        <Image src="/images/starwars.png" layout="fill" objectFit="cover" />
+        <Image
+          src="/images/starwars.png"
+          fill
+          alt="starwars"
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        />
         <video
           className="hidden group-hover:inline rounded-lg  object-cover"
           autoPlay
@@ -55,8 +83,11 @@ const Sponsor = () => {
       <div className="sponsor group">
         <Image
           src="/images/national-geographic.png"
-          layout="fill"
-          objectFit="cover"
+          fill
+          alt="national"
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
         />
         <video
           className="hidden group-hover:inline rounded-lg  object-cover"

@@ -29,7 +29,7 @@ const Movie = ({ result }) => {
   return (
     <div className="relative">
       <Head>
-        <title>{result.title || result.original_title}</title>
+        <title>{result.title || result.original_name}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -45,12 +45,12 @@ const Movie = ({ result }) => {
               }
               width="0"
               height="0"
-              alt="image"
               sizes="100vw"
               className="w-full h-auto"
+              alt="image"
             />
           </div>
-          <div className="absolute inset-y-40 md:inset-y-auto md:bottom-32 inset-x-4 md:inset-x-12 space-y-6 z-50">
+          <div className="absolute inset-y-60 lg:inset-y-auto lg:bottom-32 inset-x-4 md:inset-x-12 space-y-6 z-50">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
               {result.title || result.original_title}
             </h1>
@@ -137,7 +137,7 @@ export async function getServerSideProps(context) {
   const session = await getSession(context);
   const { id } = context.query;
   const request = await fetch(
-    `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.TMDB_API_KEY}&append_to_response=videos`
+    `https://api.themoviedb.org/3/tv/${id}?api_key=${process.env.TMDB_API_KEY}&append_to_response=videos`
   ).then((response) => response.json());
   return {
     props: {
